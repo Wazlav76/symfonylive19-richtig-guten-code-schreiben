@@ -12,6 +12,7 @@ spl_autoload_register(
                 'irishgauge\\dividendcubedraw' => '/cubes/DividendCubeDraw.php',
                 'irishgauge\\exception' => '/exceptions/Exception.php',
                 'irishgauge\\pinkcube' => '/cubes/PinkCube.php',
+                'irishgauge\\station' => '/Station.php',
                 'irishgauge\\toofewcubesexception' => '/exceptions/TooFewCubesException.php',
                 'irishgauge\\toomanycubesexception' => '/exceptions/TooManyCubesException.php',
                 'irishgauge\\whitecube' => '/cubes/WhiteCube.php'
