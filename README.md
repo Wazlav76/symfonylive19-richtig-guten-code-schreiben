@@ -10,3 +10,10 @@ Code written for/during the "Richtig guten Code schreiben" workshop at SymfonyLi
 This is example code that is not production-ready. It is intended for studying and learning purposes.
 
 (c) 2019 thePHP.cc. All rights reserved.
+
+### How-To
+
+* `php tools/phpab -o src/autoload.php src`: Autoloader generieren
+* `php tools/phpunit`: Tests ausführen
+* `php tools/psalm`: Type Checker ausführen
+* `php tools/php-cs-fixer fix`: Code formattieren
