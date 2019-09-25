@@ -10,5 +10,25 @@ final class CubeTest extends TestCase
         $cube = Cube::black();
 
         $this->assertTrue($cube->isBlack());
+        $this->assertFalse($cube->isPink());
+        $this->assertFalse($cube->isWhite());
+    }
+
+    public function testCanBePink(): void
+    {
+        $cube = Cube::pink();
+
+        $this->assertFalse($cube->isBlack());
+        $this->assertTrue($cube->isPink());
+        $this->assertFalse($cube->isWhite());
+    }
+
+    public function testCanBeWhite(): void
+    {
+        $cube = Cube::white();
+
+        $this->assertFalse($cube->isBlack());
+        $this->assertFalse($cube->isPink());
+        $this->assertTrue($cube->isWhite());
     }
 }
