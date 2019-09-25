@@ -9,7 +9,11 @@ spl_autoload_register(
             $classes = array(
                 'irishgauge\\blackcube' => '/BlackCube.php',
                 'irishgauge\\cube' => '/Cube.php',
+                'irishgauge\\dividendcubedraw' => '/DividendCubeDraw.php',
+                'irishgauge\\exception' => '/Exception.php',
                 'irishgauge\\pinkcube' => '/PinkCube.php',
+                'irishgauge\\toofewcubesexception' => '/TooFewCubesException.php',
+                'irishgauge\\toomanycubesexception' => '/TooManyCubesException.php',
                 'irishgauge\\whitecube' => '/WhiteCube.php'
             );
         }
