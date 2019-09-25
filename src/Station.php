@@ -9,7 +9,17 @@ final class Station
      */
     private $specialInterest;
 
-    public function __construct(?Cube $specialInterest)
+    public static function town(): self
+    {
+        return new self(null);
+    }
+
+    public static function city(Cube $specialInterest): self
+    {
+        return new self($specialInterest);
+    }
+
+    private function __construct(?Cube $specialInterest)
     {
         $this->specialInterest = $specialInterest;
     }

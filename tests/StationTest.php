@@ -14,7 +14,7 @@ final class StationTest extends TestCase
 {
     public function testCanBeInATown(): void
     {
-        $station = new Station(null);
+        $station = Station::town();
 
         $this->assertTrue($station->inTown());
         $this->assertFalse($station->inCity());
@@ -22,7 +22,7 @@ final class StationTest extends TestCase
 
     public function testCanBeInACity(): void
     {
-        $station = new Station(Cube::white());
+        $station = Station::city(Cube::white());
 
         $this->assertTrue($station->inCity());
         $this->assertFalse($station->inTown());
