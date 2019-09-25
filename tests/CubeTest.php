@@ -3,6 +3,12 @@ namespace IrishGauge;
 
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \IrishGauge\Cube
+ * @covers \IrishGauge\BlackCube
+ * @covers \IrishGauge\PinkCube
+ * @covers \IrishGauge\WhiteCube
+ */
 final class CubeTest extends TestCase
 {
     public function testCanBeBlack(): void

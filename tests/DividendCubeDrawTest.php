@@ -3,6 +3,13 @@ namespace IrishGauge;
 
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \IrishGauge\DividendCubeDraw
+ * @uses \IrishGauge\Cube
+ * @uses \IrishGauge\BlackCube
+ * @uses \IrishGauge\PinkCube
+ * @uses \IrishGauge\WhiteCube
+ */
 final class DividendCubeDrawTest extends TestCase
 {
     public function testCanBeCreatedFromOneCube(): void
