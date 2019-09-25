@@ -7,14 +7,14 @@ spl_autoload_register(
         static $classes = null;
         if ($classes === null) {
             $classes = array(
-                'irishgauge\\blackcube' => '/BlackCube.php',
-                'irishgauge\\cube' => '/Cube.php',
-                'irishgauge\\dividendcubedraw' => '/DividendCubeDraw.php',
-                'irishgauge\\exception' => '/Exception.php',
-                'irishgauge\\pinkcube' => '/PinkCube.php',
-                'irishgauge\\toofewcubesexception' => '/TooFewCubesException.php',
-                'irishgauge\\toomanycubesexception' => '/TooManyCubesException.php',
-                'irishgauge\\whitecube' => '/WhiteCube.php'
+                'irishgauge\\blackcube' => '/cubes/BlackCube.php',
+                'irishgauge\\cube' => '/cubes/Cube.php',
+                'irishgauge\\dividendcubedraw' => '/cubes/DividendCubeDraw.php',
+                'irishgauge\\exception' => '/exceptions/Exception.php',
+                'irishgauge\\pinkcube' => '/cubes/PinkCube.php',
+                'irishgauge\\toofewcubesexception' => '/exceptions/TooFewCubesException.php',
+                'irishgauge\\toomanycubesexception' => '/exceptions/TooManyCubesException.php',
+                'irishgauge\\whitecube' => '/cubes/WhiteCube.php'
             );
         }
         $cn = strtolower($class);
