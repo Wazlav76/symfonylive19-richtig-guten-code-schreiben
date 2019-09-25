@@ -13,6 +13,9 @@ final class DividendCubeDraw
         return new self($cubes);
     }
 
+    /**
+     * @param Cube[] $cubes
+     */
     public function __construct(array $cubes)
     {
         $this->ensureAtLeastOneCube($cubes);
