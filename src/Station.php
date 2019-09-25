@@ -44,6 +44,10 @@ final class Station
 
     public function specialInterest(): Cube
     {
+        if ($this->specialInterest === null) {
+            throw new NoSpecialInterestException;
+        }
+
         return $this->specialInterest;
     }
 }

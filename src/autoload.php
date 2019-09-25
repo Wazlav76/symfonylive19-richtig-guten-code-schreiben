@@ -11,6 +11,7 @@ spl_autoload_register(
                 'irishgauge\\cube' => '/cubes/Cube.php',
                 'irishgauge\\dividendcubedraw' => '/cubes/DividendCubeDraw.php',
                 'irishgauge\\exception' => '/exceptions/Exception.php',
+                'irishgauge\\nospecialinterestexception' => '/exceptions/NoSpecialInterestException.php',
                 'irishgauge\\pinkcube' => '/cubes/PinkCube.php',
                 'irishgauge\\specialinterestcubealreadyplacedexception' => '/exceptions/SpecialInterestCubeAlreadyPlacedException.php',
                 'irishgauge\\station' => '/Station.php',
