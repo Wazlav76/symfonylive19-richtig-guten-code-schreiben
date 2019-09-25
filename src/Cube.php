@@ -2,51 +2,35 @@
 
 namespace IrishGauge;
 
-final class Cube
+abstract class Cube
 {
-    private const BLACK = 0;
-
-    private const PINK = 1;
-
-    private const WHITE = 2;
-
-    /**
-     * @var int
-     */
-    private $color;
-
-    public static function black(): self
+    public static function black(): BlackCube
     {
-        return new self(self::BLACK);
+        return new BlackCube;
     }
 
-    public static function pink(): self
+    public static function pink(): PinkCube
     {
-        return new self(self::PINK);
+        return new PinkCube;
     }
 
-    public static function white(): self
+    public static function white(): WhiteCube
     {
-        return new self(self::WHITE);
-    }
-
-    private function __construct(int $color)
-    {
-        $this->color = $color;
+        return new WhiteCube;
     }
 
     public function isBlack(): bool
     {
-        return $this->color === self::BLACK;
+        return false;
     }
 
     public function isPink(): bool
     {
-        return $this->color === self::PINK;
+        return false;
     }
 
     public function isWhite(): bool
     {
-        return $this->color === self::WHITE;
+        return false;
     }
 }

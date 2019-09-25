@@ -7,7 +7,10 @@ spl_autoload_register(
         static $classes = null;
         if ($classes === null) {
             $classes = array(
-                'irishgauge\\cube' => '/Cube.php'
+                'irishgauge\\blackcube' => '/BlackCube.php',
+                'irishgauge\\cube' => '/Cube.php',
+                'irishgauge\\pinkcube' => '/PinkCube.php',
+                'irishgauge\\whitecube' => '/WhiteCube.php'
             );
         }
         $cn = strtolower($class);
