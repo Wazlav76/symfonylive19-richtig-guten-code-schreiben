@@ -27,4 +27,30 @@ final class StationTest extends TestCase
         $this->assertTrue($station->inCity());
         $this->assertFalse($station->inTown());
     }
+
+    public function testSpecialInterestCubeCanBePlacedWhenInTown(): void
+    {
+        $station = Station::town();
+
+        $station->placeSpecialInterest(Cube::white());
+
+        $this->assertTrue($station->inCity());
+        $this->assertTrue($station->specialInterest()->isWhite());
+    }
+
+    public function testHasSpecialInterestCubeWhenInCity(): void
+    {
+        $station = Station::city(Cube::white());
+
+        $this->assertTrue($station->specialInterest()->isWhite());
+    }
+
+    public function testSpecialInterestCubeCannotBePlacedWhenInACity(): void
+    {
+        $station = Station::city(Cube::white());
+
+        $this->expectException(SpecialInterestCubeAlreadyPlacedException::class);
+
+        $station->placeSpecialInterest(Cube::white());
+    }
 }

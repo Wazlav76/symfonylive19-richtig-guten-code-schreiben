@@ -33,4 +33,18 @@ final class Station
     {
         return $this->specialInterest !== null;
     }
+
+    public function placeSpecialInterest(Cube $cube): void
+    {
+        if ($this->specialInterest !== null) {
+            throw new SpecialInterestCubeAlreadyPlacedException;
+        }
+
+        $this->specialInterest = $cube;
+    }
+
+    public function specialInterest(): Cube
+    {
+        return $this->specialInterest;
+    }
 }
