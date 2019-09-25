@@ -5,6 +5,7 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * @covers \IrishGauge\DividendCubeDraw
+ *
  * @uses \IrishGauge\Cube
  * @uses \IrishGauge\BlackCube
  * @uses \IrishGauge\PinkCube

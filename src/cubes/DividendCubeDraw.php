@@ -1,5 +1,4 @@
 <?php declare(strict_types=1);
-
 namespace IrishGauge;
 
 final class DividendCubeDraw
@@ -32,14 +31,14 @@ final class DividendCubeDraw
 
     private function ensureAtLeastOneCube(array $cubes): void
     {
-        if (count($cubes) < 1) {
+        if (\count($cubes) < 1) {
             throw new TooFewCubesException;
         }
     }
 
     private function ensureAtMostThreeCubes(array $cubes): void
     {
-        if (count($cubes) > 3) {
+        if (\count($cubes) > 3) {
             throw new TooManyCubesException;
         }
     }
